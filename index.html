@@ -4,6 +4,10 @@
   <head>
     <title>Pricing for my first page</title>
     <link href="./css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0356e39ec5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -12,12 +16,47 @@
       <div id="right-menu-section">
         <nav>
           <ul>
-            <li class="main-menu-item">
+            <li class="main-menu-item has-sub-items">
               Product
-              <ul>
-                <li>Workflow</li>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="menu-level-2">
+                <li>
+                  Workflow
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <ul class="menu-level-3">
+                    <li>level 3</li>
+                    <li>level 3</li>
+                    <li>level 3</li>
+                    <li>level 3</li>
+                  </ul>
+                </li>
                 <li>Tax</li>
                 <li>Cash</li>
+              </ul>
+            </li>
+            <li class="main-menu-item has-sub-items">
+              Templates
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="menu-level-2">
+                <li>
+                  <i class="fa-regular fa-file-zipper menu-item-icon"></i>
+                  template 1
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <ul class="menu-level-3">
+                    <li>level 3</li>
+                    <li>level 3</li>
+                    <li>level 3</li>
+                    <li>level 3</li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-zipper menu-item-icon"></i
+                  >template 2
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-zipper menu-item-icon"></i
+                  >template 3
+                </li>
               </ul>
             </li>
             <li class="main-menu-item"><a href="pricing.html"> Pricing</a></li>

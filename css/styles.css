@@ -51,6 +51,53 @@ nav > ul ul {
   line-height: 22px;
   color: #4c4d5f;
 }
+.has-sub-items:hover > ul {
+  display: block;
+}
+.has-sub-items > i {
+  font-size: 10px;
+}
+.menu-level-2,
+.menu-level-3 {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 1px 60px 0 rgb(2 4 69 / 20%);
+  border: 0.3px solid rgba(2, 4, 69, 0.15);
+}
+.menu-level-2 > i {
+  font-size: 10px;
+  margin-left: 10px;
+}
+.menu-level-2 li {
+  width: 100%;
+  min-width: 202px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-bottom: 0.3px solid rgba(2, 4, 69, 0.15);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.menu-item-icon {
+  margin-right: 15px;
+  font-size: 20px;
+}
+.menu-level-2 li:last-child {
+  border-bottom: 0;
+}
+.menu-level-2 > li:hover .menu-level-3 {
+  display: block;
+}
+.menu-level-2 > li .fa-chevron-right {
+  font-size: 13px;
+  margin-left: auto;
+}
+.menu-level-3 {
+  top: 0;
+  left: 100%;
+}
 .btn {
   display: inline-block;
   cursor: pointer;

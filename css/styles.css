@@ -19,7 +19,7 @@ ul {
 
 .main-section {
   width: 100%;
-  max-width: 70rem;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -119,4 +119,77 @@ nav > ul ul {
 .btn-filled {
   background-color: #00b289;
   color: #fff;
+}
+#btn-menu {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-size: 30px;
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+#btn-menu.isOpen .fa-bars {
+  display: none;
+}
+#btn-menu:not(.isOpen) .fa-bars {
+  display: block;
+}
+
+#btn-menu:not(.isOpen) .fa-xmark {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #right-menu-section {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    top: 0;
+    height: 100vh;
+    padding: 80px 40px;
+    background-color: white;
+  }
+  nav > ul {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .main-menu-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #c3c3c3;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+  }
+  .main-menu-item > i {
+    margin-left: auto;
+  }
+  #right-menu-section button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .menu-level-2 > li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu-level-2,
+  .menu-level-3 {
+    position: static;
+    padding: 0;
+    margin-top: 10px;
+    box-shadow: none;
+  }
+  .menu-level-3 {
+    width: 100%;
+  }
+  #btn-menu {
+    display: block;
+    z-index: 9;
+  }
 }

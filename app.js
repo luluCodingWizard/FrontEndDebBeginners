@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  // my code goes here
-  console.log("my first log");
-  console.log($("h1"));
+  $("#btn-menu").click(function () {
+    $("#btn-menu").toggleClass("isOpen");
+    $("#right-menu-section").toggle();
+  });
 });
